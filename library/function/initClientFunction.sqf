@@ -1,0 +1,1 @@
+TGV_fnc_isAdmin = compile loadFile "library\function\both\admin\TGV_fnc_isAdmin.sqf";

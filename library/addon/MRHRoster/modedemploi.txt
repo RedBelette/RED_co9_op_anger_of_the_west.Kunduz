@@ -1,0 +1,47 @@
+Mode d'emploi:
+
+IMPORTANT: REQUIERT CBA_A3
+
+I) INSTALLATION:
+1) copier le répertoire MRHRoster dans votre dossier de mission.
+
+2) copier les lignes suivantes dans le description.ext de votre mission
+
+/////////////////======Ressources MRHRoster
+#include "MRHRoster\definesroster.hpp"
+#include "MRHRoster\dialogroster.hpp"
+/////////////////======Fin Ressources MRHRoster
+
+3)  Copier les lignes suivantes dans le init.sqf de votre mission
+
+///////////////////====lance le module roster
+0= [] execVM "MRHRoster\rosterinit.sqf";
+////////////////////////====MRHRoster©MrH.2017
+
+II) UTILISATION
+Pour les mission makers:
+Dans la description de chaque CHEF D'EQUIPE dans l'éditeur formater de la manière suivante:
+role@NOMDEQUIPE|CANALRADIODELEQUIPE
+exemple:
+"Chef de section@ALPHA | Ondes courtes Channel 4"
+| = ALT GR + 6
+
+Pour les joueurs:
+Ouvrir la fenêtre faire CTRL + ALT + H
+
+III) CHANGER LA TOUCHE DE RACCOURCI
+
+Dans rosterinit.sqf:
+
+///////////////=====Détection de touche necessite CBA3
+["MRHRosterKeybind", 
+    "MRHRosterKey", 
+    { 0= [] execVM "MRHRoster\rosterscript.sqf"; }, 
+    [35, [false, true, true]] 
+] call cba_fnc_registerKeybind;
+
+====> Changer "35" avec la valeur décimale de la touche souhaitée:
+voir: https://resources.bisimulations.com/wiki/DIK_KeyCodes
+Exemple
+//35=h
+//19=r

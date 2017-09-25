@@ -1,0 +1,17 @@
+// Ce script est exécuté sur le serveur au démarrage de la mission
+southSpawn=false;
+westSpawn=false;
+aerialSpawn=false;
+tankSpawn=false;
+loadEnemies=false;
+startTheGame=false;
+redition=false;
+
+cronJobActivated=true;
+[60] execVM "script\cronjob\removeDeadInfantry.sqf";
+[20, 50] execVM "script\cronjob\prepareRedition.sqf";
+
+[2115,2907,600] execVM "script\material\satelitte.sqf";
+
+ambientFlyBy=true;
+execVM "script\material\ambientFlyBy.sqf";

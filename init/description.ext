@@ -1,0 +1,26 @@
+
+// Ceci est le code d'exemple pour ajouter une fin
+class CfgDebriefing
+{
+
+	class End1
+	{
+		title = "Fin forcée par l'admin";
+		subtitle = "";
+		description = "Un administrateur a mis fin à la partie";
+		pictureBackground = "library\media\image\deathscreen.jpg";
+		//picture = "library\media\image\tgv.jpg";
+		//pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "Victoire";
+		subtitle = "Les talibans sont en reddition";
+		description = "Les états-unis peuvent être fière de leurs combats. Aujourd'hui, en cette heure, kunduz a été libéré !";
+		pictureBackground = "library\media\image\victory.jpg";
+		//picture = "library\media\image\tgv.jpg";
+		//pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+};

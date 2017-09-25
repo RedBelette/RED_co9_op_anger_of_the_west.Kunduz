@@ -1,0 +1,11 @@
+CHANGER LES CHEMINS!
+dansdescription.ext
+/////////============menu jip
+#include "definesJIP.hpp"
+#include "dialogsJIP.hpp"
+/////////============finmenujip
+
+dansinitplayerlocal
+/// a tester affichge menu jip si le joueur se connecte plus d'une min après le début de la partie.
+if (time >60) exitWith {0= execVM "jipmenu.sqf"
+};

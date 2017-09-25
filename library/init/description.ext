@@ -1,0 +1,8 @@
+// https://community.bistudio.com/wiki/Arma_3_Respawn
+respawnOnStart = -1;
+
+// configuration de ace3 avec les paramètres milsim
+class ACE_Settings {
+    #include "..\config\ace3\baseAceConfig.hpp"
+}
+
