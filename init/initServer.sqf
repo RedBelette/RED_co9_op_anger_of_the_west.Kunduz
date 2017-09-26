@@ -12,7 +12,7 @@ startTheGame=false;
 redition=false;
 
 cronJobActivated=true;
-[60] execVM "script\cronjob\removeDeadInfantry.sqf";
+//[60] execVM "script\cronjob\removeDeadInfantry.sqf";
 [20, 50] execVM "script\cronjob\prepareRedition.sqf";
 [2115,2907,500] execVM "script\material\satelitte.sqf";
 
