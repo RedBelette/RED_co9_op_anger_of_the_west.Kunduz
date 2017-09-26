@@ -9,5 +9,15 @@ hideObject satelitte;
 satelitte allowDamage false;
 
 onEachFrame {
-	satelitte setPos [satelittePosX,satelittePosY,satelittePosZ];
+	satelitte setVelocityTransformation [
+		[satelittePosX,satelittePosY,satelittePosZ],
+		[satelittePosX,satelittePosY,satelittePosZ],
+		[0,0,0],
+		[0,0,0],
+		[0,0,0],
+		[0,0,0],
+		[0,0,0],
+		[0,0,0],
+		0
+	];
 };
