@@ -1,8 +1,8 @@
 params ["_job", "_time"];
 
-trigger = createTrigger ["EmptyDetector", [0,0,0], false];
-trigger setTriggerActivation ["NONE", "PRESENT", true];
-trigger setTriggerStatements ["thisTrigger", _job, ""];
-trigger setTriggerTimeout [_time, _time, _time, true];
+_trigger = createTrigger ["EmptyDetector", [0,0,0], false];
+_trigger setTriggerActivation ["NONE", "PRESENT", true];
+_trigger setTriggerStatements ["!(triggerActivated thisTrigger)", _job, ""];
+_trigger setTriggerTimeout [_time, _time, _time, true];
 
-trigger
+_trigger

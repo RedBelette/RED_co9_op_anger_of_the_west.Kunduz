@@ -1,6 +1,7 @@
 // Chargement des fonctions créées pour la mission
 MIS_fnc_spawnAndAttack = compile loadFile "function\MIS_fnc_spawnAndAttack.sqf";
 MIS_fnc_spawnAndAttackEachTime = compile loadFile "function\MIS_fnc_spawnAndAttackEachTime.sqf";
+MIS_fnc_cronjob = compile loadFile "function\MIS_fnc_cronjob.sqf";
 
 // Ce script est exécuté sur le serveur au démarrage de la mission
 southSpawn=false;
