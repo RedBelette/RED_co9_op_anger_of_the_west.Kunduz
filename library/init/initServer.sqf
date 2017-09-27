@@ -9,6 +9,9 @@
 // Initialise les fonctions pour tout les clients.
 execVM "library\function\initServerFunction.sqf";
 
+// Initialise les fonctions pour tout les clients.
+execVM "library\function\initClientFunction.sqf";
+
 // Désactive la sauvegarde manuelle et automatique
 enableSaving [false, false];
 // Désactive les voix digital de toutes les unités
