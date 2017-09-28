@@ -5,4 +5,5 @@ _handle = execVM "library\init\initServer.sqf";
 waitUntil {scriptDone _handle};
 
 // Execute le fichier initServer de la mission
-execVM "init\initServer.sqf";
+_handle = execVM "init\initServer.sqf";
+waitUntil {scriptDone _handle};
