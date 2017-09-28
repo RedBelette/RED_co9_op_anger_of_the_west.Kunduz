@@ -21,8 +21,6 @@ if (tgvNotificationAtStartup) then {
 	// execute les messages d'acceuil
 	[] execVM "library\script\welcome.sqf";
 	[] execVM "library\script\popup.sqf";
-	// Texte d'intro
-	[] execVM "library\script\introtext.sqf";
 };
 
 if (tgvAddEarPlugsToUniform) then {
