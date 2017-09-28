@@ -7,10 +7,12 @@
 #include "..\..\config\tgvFrameworkReconfig.sqf";
 
 // Initialise les fonctions pour tout les clients.
-execVM "library\function\initClientFunction.sqf";
+_handle = execVM "library\function\initClientFunction.sqf";
+waitUntil {scriptDone _handle};
 
 // Execute le menu briefing
-execVM "library\script\briefing\admin.sqf";
+_handle = execVM "library\script\briefing\admin.sqf";
+waitUntil {scriptDone _handle};
 
 if (tgvIntroVideo) then {
 	// execute la vidéo du logo TGV
