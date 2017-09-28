@@ -1,7 +1,9 @@
 // Ce fichier est exécuté lorsqu'un joueur respawn
 
 // Execute le fichier onPlayerRespawn du framework
-execVM "library\event\onPlayerRespawn.sqf";
+_handle = execVM "library\event\onPlayerRespawn.sqf";
+waitUntil {scriptDone _handle};
 
 // Execute le fichier onPlayerRespawn de la mission
-execVM "event\onPlayerRespawn.sqf";
+_handle = execVM "event\onPlayerRespawn.sqf";
+waitUntil {scriptDone _handle};
