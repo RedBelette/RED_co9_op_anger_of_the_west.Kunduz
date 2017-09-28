@@ -1,7 +1,9 @@
 // Ce fichier est exécuté lorsqu'un joueur est tué
 
 // Execute le fichier onPlayerKilled du framework
-execVM "library\event\onPlayerKilled.sqf";
+_handle = execVM "library\event\onPlayerKilled.sqf";
+waitUntil {scriptDone _handle};
 
 // Execute le fichier onPlayerKilled de la mission
-execVM "event\onPlayerKilled.sqf";
+_handle = execVM "event\onPlayerKilled.sqf";
+waitUntil {scriptDone _handle};
