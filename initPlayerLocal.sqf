@@ -5,4 +5,5 @@ _handle = execVM "library\init\initPlayerLocal.sqf";
 waitUntil {scriptDone _handle};
 
 // Execute le fichier initPlayerLocal de la mission
-execVM "init\initPlayerLocal.sqf";
+_handle = execVM "init\initPlayerLocal.sqf";
+waitUntil {scriptDone _handle};
