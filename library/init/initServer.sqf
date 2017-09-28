@@ -7,10 +7,8 @@
 #include "..\..\config\tgvFrameworkReconfig.sqf";
 
 // Initialise les fonctions pour tout les clients.
-execVM "library\function\initServerFunction.sqf";
-
-// Initialise les fonctions pour tout les clients.
-execVM "library\function\initClientFunction.sqf";
+_handle = execVM "library\function\initServerFunction.sqf";
+waitUntil {scriptDone _handle};
 
 // Désactive la sauvegarde manuelle et automatique
 enableSaving [false, false];
