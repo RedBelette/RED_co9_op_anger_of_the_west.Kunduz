@@ -10,3 +10,5 @@ waitUntil {scriptDone _handle};
 
 _handle = execVM "script\briefing\note.sqf";
 waitUntil {scriptDone _handle};
+
+call MIS_fnc_remove343;
