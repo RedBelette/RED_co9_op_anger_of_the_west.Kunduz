@@ -1,6 +1,9 @@
 // Ce script s'exécute localement quand le joueur rejoins la mission (inclus pour le début de partie)
-execVM "script\briefing\usa.sqf";
+_handle = execVM "script\briefing\usa.sqf";
+waitUntil {scriptDone _handle};
 
-execVM "script\briefing\adminMission.sqf";
+_handle = execVM "script\briefing\adminMission.sqf";
+waitUntil {scriptDone _handle};
 
-execVM "script\briefing\note.sqf";
+_handle = execVM "script\briefing\note.sqf";
+waitUntil {scriptDone _handle};
