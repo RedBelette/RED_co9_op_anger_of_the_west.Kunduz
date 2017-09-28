@@ -8,7 +8,9 @@ if (!isDedicated && (isNull player)) then
 };
 
 // Execute le fichier init du framework
-execVM "library\init\init.sqf";
+_handle = execVM "library\init\init.sqf";
+waitUntil {scriptDone _handle};
 
 // Execute le fichier init de la mission
-execVM "init\init.sqf";
+_handle = execVM "init\init.sqf";
+waitUntil {scriptDone _handle};
