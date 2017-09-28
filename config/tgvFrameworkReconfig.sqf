@@ -4,7 +4,7 @@
 tgvIntroVideo=true;
 
 // Cette variable permet d'afficher les notifications de début de mission.
-tgvNotificationAtStartup=true;
+tgvNotificationAtStartup=false;
 
 // Cette variable permet d'afficher le zoom vers le personnage au départ de la mission ou durant la connexion d'un joueur. La valeur par défaut est à true.
 tgvZoomOnThePlayerInIntro=false;
