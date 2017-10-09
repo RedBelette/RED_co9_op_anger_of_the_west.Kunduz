@@ -1,3 +1,4 @@
+startTheGame=true;
 loadEnemies=true;
 
 ["Attention, la mission démarre"] remoteExec ["hint"];

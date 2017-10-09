@@ -19,6 +19,7 @@ redition=false;
 ["[20] execVM 'script\cronjob\prepareRedition.sqf';", 25] call TGV_fnc_repeatedAction;
 // Les ennemis vont défendre la zone de kar shek dès qu'il restera moins de x unités encore en vie
 ["loadEnemies and (east countSide allUnits) < 60","[east, getPos karShekArea, 180] call TGV_fnc_defendArea;"] call TGV_fnc_action;
+["loadEnemies and (east countSide allUnits) < 40","[getPos talKarArea, getPos karShekArea, 5, 20] execVM 'script\spawnEnemies.sqf';"] call TGV_fnc_action;
 
 
 // Avions d'ambience
