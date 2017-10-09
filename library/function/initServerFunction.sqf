@@ -11,6 +11,7 @@ TGV_fnc_ambientFlyBy = compile loadFile "library\function\server\ambient\TGV_fnc
 
 TGV_fnc_action = compile loadFile "library\function\server\cronjob\TGV_fnc_action.sqf";
 TGV_fnc_repeatedAction = compile loadFile "library\function\server\cronjob\TGV_fnc_repeatedAction.sqf";
+TGV_fnc_timedAction = compile loadFile "library\function\server\cronjob\TGV_fnc_timedAction.sqf";
 TGV_fnc_cronjob = compile loadFile "library\function\server\cronjob\TGV_fnc_cronjob.sqf";
 TGV_fnc_initActionRegistry = compile loadFile "library\function\server\cronjob\TGV_fnc_initActionRegistry.sqf";
 TGV_fnc_registerAction = compile loadFile "library\function\server\cronjob\TGV_fnc_registerAction.sqf";

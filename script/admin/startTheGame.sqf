@@ -4,6 +4,4 @@ loadEnemies=true;
 
 sleep 10;
 
-["Colère de l'ouest", "par RedBelette"] call MIS_fnc_scenarioTitle;
-
-/*execVM "script\ia\eastDefendArea.sqf";*/
+["Colère de l'ouest", "par RedBelette"] call TGV_fnc_scenarioTitle;
