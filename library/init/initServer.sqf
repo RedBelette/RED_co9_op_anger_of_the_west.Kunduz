@@ -1,5 +1,8 @@
 // Ce script est exécuté sur le serveur au démarrage de la mission
 
+// Compile and include object oriented and hashmap (used by the cronjob registry at least)
+call compilefinal preprocessFileLineNumbers "library\script\hashmap\oo_hashmap.sqf";
+
 // Chargement des valeurs par défaut du framework. Changer les valeurs dans votre initServer.sqf de votre mission pour gérer votre propre configuration.
 #include "..\config\tgvDefaultFrameworkConfig.sqf";
 
@@ -18,4 +21,6 @@ enableSaving [false, false];
 // Permet de s'authentifier entant que zeus si on est un admin sur le serveur ou si on joue en singleplayer
 if !(isNil 'tgvcurator') then  { // Vérifie si la variable a été assigné
 	tgvcurator addEventHandler ["CuratorPinged", {_this exec "library\event\curatorPinged.sqf"}];
-}
+};
+
+"library\script\briefing\admin.sqf" remoteExec ["execVM", 0, true];
