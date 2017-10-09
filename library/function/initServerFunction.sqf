@@ -23,4 +23,6 @@ TGV_fnc_runAction = compile loadFile "library\function\server\cronjob\TGV_fnc_ru
 TGV_fnc_huntirSatelitte = compile loadFile "library\function\server\feature\TGV_fnc_huntirSatelitte.sqf";
 TGV_fnc_scenarioTitle = compile loadFile "library\function\server\text\TGV_fnc_scenarioTitle.sqf";
 
+TGV_fnc_execScriptOnClients = compile loadFile "library\function\server\conversation\TGV_fnc_execScriptOnClients.sqf";
+
 TGV_fnc_isAdmin = compile loadFile "library\function\both\admin\TGV_fnc_isAdmin.sqf";

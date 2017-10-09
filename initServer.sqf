@@ -1,9 +1,7 @@
 // Ce script est exécuté sur le serveur au démarrage de la mission
 
 // Execute le fichier initServer du framework
-_handle = execVM "library\init\initServer.sqf";
-waitUntil {scriptDone _handle};
+#include "library\init\initServer.sqf";
 
 // Execute le fichier initServer de la mission
-_handle = execVM "init\initServer.sqf";
-waitUntil {scriptDone _handle};
+#include "init\initServer.sqf";
