@@ -1,7 +1,7 @@
 // Ceci est le fichier de configuration permettant de modifier le comportement du framework.
 
 // Cette variable permet d'afficher la vidéo TGV au départ de la mission ou lorsqu'un joueur se connecte.
-tgvIntroVideo=true;
+tgvIntroVideo=false;
 
 // Cette variable permet d'afficher les notifications de début de mission.
 tgvNotificationAtStartup=false;
@@ -10,4 +10,4 @@ tgvNotificationAtStartup=false;
 tgvZoomOnThePlayerInIntro=false;
 
 // Cette variable permet d'ajouter des bouchons d'oreil dans les poches du joueur.
-tgvAddEarPlugsToUniform=true;
+tgvAddEarPlugsToUniform=false;

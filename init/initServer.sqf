@@ -35,3 +35,21 @@ redition=false;
 ["script\briefing\usa.sqf", true] call TGV_fnc_execScriptOnClients;
 ["script\briefing\adminMission.sqf", true] call TGV_fnc_execScriptOnClients;
 ["script\briefing\note.sqf", true] call TGV_fnc_execScriptOnClients;
+
+
+// Configure monitors
+
+/*[vehicleCam1, monitor1, "monicam1", [0.5,1.6,1.45]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[vehicleCam2, monitor2, "monicam2", [0.5,1.6,1.45]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[vehicleCam3, monitor3, "monicam3", [0.5,1.6,1.45]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[vehicleCam4, monitor4, "monicam4", [0.5,1.6,1.45]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+
+[vehicleCam5, monitor5, "monicam5", [0.5,1.6,5]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[vehicleCam6, monitor6, "monicam6", [0.5,1.6,5]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[vehicleCam7, monitor7, "monicam7", [0.5,1.6,5]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[vehicleCam8, monitor8, "monicam8", [0.5,1.6,5]] execVM "script\server\monitor\setupVehicleCamera.sqf";*/
+
+[helicam1, "monicam1", [0,1,-2]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[helicam2, "monicam2", [0,1,-2]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+/*[helicam3, monitor11, "monicam11", [0.5,1.6,5]] execVM "script\server\monitor\setupVehicleCamera.sqf";
+[helicam4, monitor12, "monicam12", [0.5,1.6,5]] execVM "script\server\monitor\setupVehicleCamera.sqf";*/
