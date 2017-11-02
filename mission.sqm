@@ -8,7 +8,7 @@ class EditorData
 	toggles=13;
 	class ItemIDProvider
 	{
-		nextID=1031;
+		nextID=1037;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=392;
+		nextID=418;
 	};
 	class Camera
 	{
-		pos[]={4886.584,19.05143,183.95279};
-		dir[]={-0.58221567,-0.31699765,0.74875051};
-		up[]={-0.19460054,0.94841033,0.25026205};
-		aside[]={0.78946429,-1.1520751e-007,0.61387187};
+		pos[]={5007.0903,23.110388,156.56339};
+		dir[]={-0.85605741,-0.48573053,0.17744054};
+		up[]={-0.47567645,0.87400615,0.098598957};
+		aside[]={0.20298737,1.0500298e-006,0.97928143};
 	};
 };
 binarizationWanted=0;
@@ -429,7 +429,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=115;
+		items=116;
 		class Item0
 		{
 			dataType="Layer";
@@ -24218,7 +24218,7 @@ class Mission
 			};
 			id=829;
 			type="Land_HBarrier_Big_F";
-			atlOffset=-0.022478104;
+			atlOffset=-0.02247715;
 		};
 		class Item74
 		{
@@ -24800,7 +24800,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4831.6846,11.309504,258.86792};
-				angles[]={-0,2.6293597,6.2152901};
+				angles[]={0,2.6293597,6.2152901};
 			};
 			side="Empty";
 			flags=4;
@@ -24817,7 +24817,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4823.8872,11.094575,254.37228};
-				angles[]={-0,2.6293597,0.0079935296};
+				angles[]={0,2.6293597,0.0079935296};
 			};
 			side="Empty";
 			flags=4;
@@ -24868,7 +24868,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4875.7969,10.732537,268.82193};
-				angles[]={-0,4.1864853,6.2751918};
+				angles[]={0,4.1864853,6.2751918};
 			};
 			side="Empty";
 			flags=4;
@@ -24885,7 +24885,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4870.3359,10.802293,276.04529};
-				angles[]={-0,4.0074625,6.2791886};
+				angles[]={0,4.0074625,6.2791886};
 			};
 			side="Empty";
 			flags=4;
@@ -26362,6 +26362,37 @@ class Mission
 			};
 			id=1020;
 			atlOffset=-0.0013718605;
+		};
+		class Item115
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4988.4731,9.6061115,162.22812};
+						angles[]={0,1.7068875,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=1036;
+					type="rhsusf_army_ocp_teamleader";
+					atlOffset=-1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1035;
+			atlOffset=-1.9073486e-006;
 		};
 	};
 	class Connections
