@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=444;
+		nextID=470;
 	};
 	class Camera
 	{
-		pos[]={613.12,36.361599,4888.8408};
-		dir[]={0.26596197,-0.33281878,-0.90484315};
-		up[]={0.093884036,0.9428308,-0.31942958};
-		aside[]={-0.95947605,-3.932073e-006,-0.28199777};
+		pos[]={1075.2875,63.096054,2583.6614};
+		dir[]={0.94985151,-0.28803599,-0.1227497};
+		up[]={0.28579792,0.95746416,-0.036940232};
+		aside[]={-0.1281928,-5.1817042e-006,-0.9918102};
 	};
 };
 binarizationWanted=0;
@@ -724,10 +724,9 @@ class Mission
 		{
 			dataType="Layer";
 			name="enemies";
-			state=1;
 			class Entities
 			{
-				items=86;
+				items=77;
 				class Item0
 				{
 					dataType="Object";
@@ -1122,7 +1121,7 @@ class Mission
 					{
 					};
 					id=69;
-					atlOffset=-124.86;
+					atlOffset=-0.0069994926;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1524,7 +1523,7 @@ class Mission
 					{
 					};
 					id=74;
-					atlOffset=-124.86;
+					atlOffset=0.0059986115;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1550,810 +1549,6 @@ class Mission
 					};
 				};
 				class Item3
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2646.8735,6.7091141,2048.0151};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=85;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=-0.0067157745;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2646.5979,6.8495169,2055.0808};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=86;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=0.0039997101;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2653.939,6.7315292,2048.2908};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=87;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=0.0095705986;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2646.3223,7.2863636,2062.1465};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=88;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=0.011008739;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=84;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item4
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2512.0483,8.1991234,2845.865};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=90;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=0.0080099106;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2511.7729,7.9216514,2852.9307};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=91;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=0.0081567764;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2519.1143,8.6373844,2846.1404};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=92;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=0.0080041885;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2511.4976,7.8395867,2859.9963};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=93;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=0.0059981346;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=89;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item5
 				{
 					dataType="Group";
 					side="East";
@@ -2730,7 +1925,7 @@ class Mission
 					{
 					};
 					id=94;
-					atlOffset=-124.86;
+					atlOffset=0.027994156;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2755,811 +1950,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item6
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2691.6304,7.5303388,2816.2839};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=100;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=8.5830688e-006;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2691.355,7.8408237,2823.3496};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=101;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=0.015995979;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2698.6963,7.4951353,2816.5593};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=102;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=0.053986549;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2691.0796,7.6915913,2830.4153};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=103;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=-0.0039987564;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=99;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item7
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2538.2139,6.9236636,3262.5461};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=105;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=0.010982513;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2537.9385,7.3759155,3269.6118};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=106;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=0.031991959;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2545.2798,7.0210075,3262.8215};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=107;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=0.013996124;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2537.6631,7.7300687,3276.6775};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=108;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=0.012996674;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=104;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item8
+				class Item4
 				{
 					dataType="Group";
 					side="East";
@@ -3936,7 +2327,7 @@ class Mission
 					{
 					};
 					id=114;
-					atlOffset=-124.86;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3961,7 +2352,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item9
+				class Item5
 				{
 					dataType="Group";
 					side="East";
@@ -4338,7 +2729,7 @@ class Mission
 					{
 					};
 					id=119;
-					atlOffset=-124.86;
+					atlOffset=-0.021956444;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4363,407 +2754,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item10
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2367.2246,6.2841005,2673.5337};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=125;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=4.7683716e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2366.949,6.385016,2680.5994};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=126;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=4.7683716e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2374.29,5.9746299,2673.8093};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=127;
-							type="LOP_AM_OPF_Infantry_GL";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2366.6733,6.608995,2687.665};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=128;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=124;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item11
+				class Item6
 				{
 					dataType="Group";
 					side="East";
@@ -5140,7 +3131,7 @@ class Mission
 					{
 					};
 					id=129;
-					atlOffset=-124.86;
+					atlOffset=-0.0079979897;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5165,7 +3156,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item12
+				class Item7
 				{
 					dataType="Group";
 					side="East";
@@ -5782,7 +3773,7 @@ class Mission
 						};
 					};
 					id=134;
-					atlOffset=-124.86;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5807,7 +3798,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item13
+				class Item8
 				{
 					dataType="Group";
 					side="East";
@@ -6427,7 +4418,7 @@ class Mission
 						};
 					};
 					id=144;
-					atlOffset=-124.86;
+					atlOffset=0.0010004044;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6452,652 +4443,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item14
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=8;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2457.7227,7.05232,3100.4004};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=155;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=-0.012008667;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2460.7227,6.7324953,3095.4004};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=156;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=-0.014007092;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2462.7227,6.5983887,3095.4004};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=157;
-							type="LOP_AM_OPF_Infantry_Corpsman";
-							atlOffset=-0.013006687;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2464.7227,6.4703903,3095.4004};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=158;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=-0.01299715;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item4
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2466.7227,6.3450313,3095.4004};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=159;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=-0.017249107;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item5
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2468.7227,6.0928164,3095.4004};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=160;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=-0.045989037;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item6
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2472.3867,5.6510868,3095.3364};
-								angles[]={0.063912325,0,6.2352223};
-							};
-							side="East";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=161;
-							type="LOP_AM_OPF_Infantry_Rifleman";
-							atlOffset=-0.027446747;
-						};
-						class Item7
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2472.3867,5.6510873,3095.3364};
-								angles[]={0.063912325,0,6.2352223};
-							};
-							side="East";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=162;
-							type="LOP_AM_OPF_Infantry_Rifleman";
-							atlOffset=-0.02744627;
-						};
-					};
-					class Attributes
-					{
-					};
-					class CrewLinks
-					{
-						class LinkIDProvider
-						{
-							nextID=2;
-						};
-						class Links
-						{
-							items=2;
-							class Item0
-							{
-								linkID=0;
-								item0=161;
-								item1=163;
-								class CustomData
-								{
-									role=1;
-								};
-							};
-							class Item1
-							{
-								linkID=1;
-								item0=162;
-								item1=163;
-								class CustomData
-								{
-									role=2;
-									turretPath[]={0};
-								};
-							};
-						};
-					};
-					id=154;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=200;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item15
+				class Item9
 				{
 					dataType="Group";
 					side="East";
@@ -7360,7 +4706,6 @@ class Mission
 						};
 					};
 					id=187;
-					atlOffset=-124.86;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7385,7 +4730,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item16
+				class Item10
 				{
 					dataType="Group";
 					side="East";
@@ -7657,7 +5002,7 @@ class Mission
 						};
 					};
 					id=200;
-					atlOffset=-124.86;
+					atlOffset=0.0119977;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7682,7 +5027,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item17
+				class Item11
 				{
 					dataType="Group";
 					side="East";
@@ -7844,9 +5189,9 @@ class Mission
 						};
 					};
 					id=213;
-					atlOffset=-124.86;
+					atlOffset=3.8146973e-005;
 				};
-				class Item18
+				class Item12
 				{
 					dataType="Group";
 					side="East";
@@ -7924,9 +5269,9 @@ class Mission
 						};
 					};
 					id=223;
-					atlOffset=-124.86;
+					atlOffset=1.01754;
 				};
-				class Item19
+				class Item13
 				{
 					dataType="Group";
 					side="East";
@@ -8061,9 +5406,9 @@ class Mission
 						};
 					};
 					id=228;
-					atlOffset=-124.86;
+					atlOffset=-1.1444092e-005;
 				};
-				class Item20
+				class Item14
 				{
 					dataType="Group";
 					side="East";
@@ -8142,9 +5487,9 @@ class Mission
 						};
 					};
 					id=236;
-					atlOffset=-124.86;
+					atlOffset=1.5258789e-005;
 				};
-				class Item21
+				class Item15
 				{
 					dataType="Group";
 					side="East";
@@ -8195,9 +5540,9 @@ class Mission
 						};
 					};
 					id=241;
-					atlOffset=-124.86;
+					atlOffset=-3.0517578e-005;
 				};
-				class Item22
+				class Item16
 				{
 					dataType="Group";
 					side="East";
@@ -8248,9 +5593,9 @@ class Mission
 						};
 					};
 					id=244;
-					atlOffset=-124.86;
+					atlOffset=0.055931091;
 				};
-				class Item23
+				class Item17
 				{
 					dataType="Group";
 					side="East";
@@ -8277,9 +5622,8 @@ class Mission
 					{
 					};
 					id=247;
-					atlOffset=-124.86;
 				};
-				class Item24
+				class Item18
 				{
 					dataType="Group";
 					side="East";
@@ -8308,9 +5652,9 @@ class Mission
 					{
 					};
 					id=249;
-					atlOffset=-124.86;
+					atlOffset=1.1444092e-005;
 				};
-				class Item25
+				class Item19
 				{
 					dataType="Group";
 					side="East";
@@ -8387,9 +5731,8 @@ class Mission
 					{
 					};
 					id=251;
-					atlOffset=-124.86;
 				};
-				class Item26
+				class Item20
 				{
 					dataType="Group";
 					side="East";
@@ -8433,9 +5776,8 @@ class Mission
 					{
 					};
 					id=256;
-					atlOffset=-124.86;
 				};
-				class Item27
+				class Item21
 				{
 					dataType="Group";
 					side="East";
@@ -8479,9 +5821,8 @@ class Mission
 					{
 					};
 					id=259;
-					atlOffset=-124.86;
 				};
-				class Item28
+				class Item22
 				{
 					dataType="Group";
 					side="East";
@@ -8558,9 +5899,8 @@ class Mission
 					{
 					};
 					id=262;
-					atlOffset=-124.86;
 				};
-				class Item29
+				class Item23
 				{
 					dataType="Group";
 					side="East";
@@ -8604,9 +5944,8 @@ class Mission
 					{
 					};
 					id=267;
-					atlOffset=-124.86;
 				};
-				class Item30
+				class Item24
 				{
 					dataType="Group";
 					side="East";
@@ -8683,9 +6022,8 @@ class Mission
 					{
 					};
 					id=270;
-					atlOffset=-124.86;
 				};
-				class Item31
+				class Item25
 				{
 					dataType="Group";
 					side="East";
@@ -8762,9 +6100,8 @@ class Mission
 					{
 					};
 					id=275;
-					atlOffset=-124.86;
 				};
-				class Item32
+				class Item26
 				{
 					dataType="Group";
 					side="East";
@@ -8841,9 +6178,8 @@ class Mission
 					{
 					};
 					id=280;
-					atlOffset=-124.86;
 				};
-				class Item33
+				class Item27
 				{
 					dataType="Group";
 					side="East";
@@ -8986,9 +6322,8 @@ class Mission
 					{
 					};
 					id=285;
-					atlOffset=-124.86;
 				};
-				class Item34
+				class Item28
 				{
 					dataType="Group";
 					side="East";
@@ -9163,9 +6498,8 @@ class Mission
 						};
 					};
 					id=312;
-					atlOffset=-124.86;
 				};
-				class Item35
+				class Item29
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9182,7 +6516,7 @@ class Mission
 					type="LOP_AM_OPF_Kord_High";
 					atlOffset=1.01754;
 				};
-				class Item36
+				class Item30
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9199,7 +6533,7 @@ class Mission
 					type="LOP_AM_OPF_Kord_High";
 					atlOffset=0.035400391;
 				};
-				class Item37
+				class Item31
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9259,7 +6593,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item38
+				class Item32
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9319,67 +6653,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item39
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2472.4958,7.9241366,3095.4299};
-						angles[]={0.063912325,0,6.2352223};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						rank="SERGEANT";
-					};
-					id=163;
-					type="LOP_AM_OPF_Landrover_M2";
-					atlOffset=-0.027446747;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item40
+				class Item33
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9396,7 +6670,7 @@ class Mission
 					type="LOP_AM_OPF_Static_M2";
 					atlOffset=-3.0517578e-005;
 				};
-				class Item41
+				class Item34
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9413,7 +6687,7 @@ class Mission
 					type="LOP_AM_OPF_Static_M2";
 					atlOffset=0.055931091;
 				};
-				class Item42
+				class Item35
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9429,7 +6703,7 @@ class Mission
 					id=219;
 					type="LOP_AM_OPF_Static_Mk19_TriPod";
 				};
-				class Item43
+				class Item36
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9446,7 +6720,7 @@ class Mission
 					type="LOP_AM_OPF_Static_Mk19_TriPod";
 					atlOffset=-1.9073486e-005;
 				};
-				class Item44
+				class Item37
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9463,7 +6737,7 @@ class Mission
 					type="LOP_AM_OPF_NSV_TriPod";
 					atlOffset=3.8146973e-005;
 				};
-				class Item45
+				class Item38
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9480,7 +6754,7 @@ class Mission
 					type="LOP_AM_OPF_NSV_TriPod";
 					atlOffset=1.5258789e-005;
 				};
-				class Item46
+				class Item39
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9498,7 +6772,7 @@ class Mission
 					type="LOP_AM_OPF_Offroad_M2";
 					atlOffset=-4.7683716e-007;
 				};
-				class Item47
+				class Item40
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9515,7 +6789,7 @@ class Mission
 					type="LOP_AM_OPF_Static_SPG9";
 					atlOffset=5.7220459e-005;
 				};
-				class Item48
+				class Item41
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9532,7 +6806,7 @@ class Mission
 					type="LOP_AM_OPF_Static_SPG9";
 					atlOffset=-3.8146973e-006;
 				};
-				class Item49
+				class Item42
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9763,7 +7037,7 @@ class Mission
 						nAttributes=11;
 					};
 				};
-				class Item50
+				class Item43
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9994,7 +7268,7 @@ class Mission
 						nAttributes=11;
 					};
 				};
-				class Item51
+				class Item44
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10225,7 +7499,7 @@ class Mission
 						nAttributes=11;
 					};
 				};
-				class Item52
+				class Item45
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10457,7 +7731,7 @@ class Mission
 						nAttributes=11;
 					};
 				};
-				class Item53
+				class Item46
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10688,7 +7962,7 @@ class Mission
 						nAttributes=11;
 					};
 				};
-				class Item54
+				class Item47
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10919,7 +8193,7 @@ class Mission
 						nAttributes=11;
 					};
 				};
-				class Item55
+				class Item48
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10936,7 +8210,7 @@ class Mission
 					type="LOP_AM_OPF_Static_ZU23";
 					atlOffset=0.02432251;
 				};
-				class Item56
+				class Item49
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10953,7 +8227,7 @@ class Mission
 					type="LOP_AM_OPF_Static_ZU23";
 					atlOffset=-1.1444092e-005;
 				};
-				class Item57
+				class Item50
 				{
 					dataType="Group";
 					side="East";
@@ -11330,7 +8604,7 @@ class Mission
 					{
 					};
 					id=444;
-					atlOffset=-124.86;
+					atlOffset=0.0079979897;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11355,7 +8629,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item58
+				class Item51
 				{
 					dataType="Group";
 					side="East";
@@ -11732,7 +9006,7 @@ class Mission
 					{
 					};
 					id=454;
-					atlOffset=-124.86;
+					atlOffset=0.058985233;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11757,7 +9031,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item59
+				class Item52
 				{
 					dataType="Group";
 					side="East";
@@ -12134,7 +9408,7 @@ class Mission
 					{
 					};
 					id=459;
-					atlOffset=-124.86;
+					atlOffset=-0.0059986115;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12159,409 +9433,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item60
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2364.6245,3.9369125,2811.3638};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=465;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=-0.029999971;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2364.3489,3.942431,2818.4294};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=466;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=0.02404213;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2371.6899,3.8943782,2811.6394};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=467;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=0.0080029964;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2364.0732,4.3209491,2825.4951};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=468;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=-0.0035905838;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=464;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item61
+				class Item53
 				{
 					dataType="Group";
 					side="East";
@@ -12938,7 +9810,7 @@ class Mission
 					{
 					};
 					id=469;
-					atlOffset=-124.86;
+					atlOffset=-0.043024063;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12963,7 +9835,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item62
+				class Item54
 				{
 					dataType="Group";
 					side="East";
@@ -13340,7 +10212,7 @@ class Mission
 					{
 					};
 					id=474;
-					atlOffset=-124.86;
+					atlOffset=-0.0039625168;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13365,7 +10237,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item63
+				class Item55
 				{
 					dataType="Group";
 					side="East";
@@ -13742,7 +10614,7 @@ class Mission
 					{
 					};
 					id=686;
-					atlOffset=-124.86;
+					atlOffset=-0.0049986839;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13767,7 +10639,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item64
+				class Item56
 				{
 					dataType="Group";
 					side="East";
@@ -14144,7 +11016,7 @@ class Mission
 					{
 					};
 					id=691;
-					atlOffset=-124.86;
+					atlOffset=0.034991741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14169,7 +11041,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item65
+				class Item57
 				{
 					dataType="Group";
 					side="East";
@@ -14546,7 +11418,7 @@ class Mission
 					{
 					};
 					id=701;
-					atlOffset=-124.86;
+					atlOffset=-0.014010429;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14571,409 +11443,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item66
-				{
-					dataType="Group";
-					side="East";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2486.47,4.9718132,1931.501};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-							};
-							id=707;
-							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=0.016995907;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2486.1943,4.9768076,1938.5667};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.44999999;
-								rank="CORPORAL";
-							};
-							id=708;
-							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=0.046244621;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2493.5354,4.9837804,1931.7766};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=709;
-							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=-0.039823055;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2485.9187,5.0440459,1945.6323};
-								angles[]={0,3.8880177,0};
-							};
-							side="East";
-							flags=5;
-							class Attributes
-							{
-								skill=0.40000001;
-							};
-							id=710;
-							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=0.018995285;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="_this setFeatureType (parseNumber _value)";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="Enh_ambientAnimParams";
-									expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="";
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
-														value="ASIS";
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=706;
-					atlOffset=-124.86;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_randomPatrol_maxDistance";
-							expression="if (!is3DEN && (_value > 0)) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=100;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item67
+				class Item58
 				{
 					dataType="Group";
 					side="East";
@@ -15347,7 +11817,6 @@ class Mission
 					{
 					};
 					id=1079;
-					atlOffset=-124.86;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15372,7 +11841,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item68
+				class Item59
 				{
 					dataType="Group";
 					side="East";
@@ -15749,7 +12218,7 @@ class Mission
 					{
 					};
 					id=1084;
-					atlOffset=-124.86;
+					atlOffset=0.39592934;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15774,7 +12243,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item69
+				class Item60
 				{
 					dataType="Group";
 					side="East";
@@ -15786,7 +12255,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1074.1885,34.52026,2582.2151};
+								position[]={1074,35.001438,2582.05};
 								angles[]={0,3.8880177,0};
 							};
 							side="East";
@@ -15797,7 +12266,7 @@ class Mission
 							};
 							id=1090;
 							type="LOP_AM_OPF_Infantry_SL";
-							atlOffset=-0.65783691;
+							atlOffset=-0.20399094;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15877,11 +12346,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1073.1885,35.997288,2589.2151};
+								position[]={1073,34.001438,2589.05};
 								angles[]={0,3.8880177,0};
 							};
 							side="East";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								skill=0.44999999;
@@ -15889,7 +12358,7 @@ class Mission
 							};
 							id=1091;
 							type="LOP_AM_OPF_Infantry_AR";
-							atlOffset=1.919014;
+							atlOffset=-0.094005585;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15969,18 +12438,18 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1080.7815,35.41095,2582.7886};
+								position[]={1081,34.001438,2583.05};
 								angles[]={0,3.8880177,0};
 							};
 							side="East";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								skill=0.40000001;
 							};
 							id=1092;
 							type="LOP_AM_OPF_Infantry_GL";
-							atlOffset=1.0340691;
+							atlOffset=-0.22794724;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -16060,18 +12529,17 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1073.1885,37.325424,2596.2151};
+								position[]={1073,33.497425,2596.05};
 								angles[]={0,3.8880177,0};
 							};
 							side="East";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								skill=0.40000001;
 							};
 							id=1093;
 							type="LOP_AM_OPF_Infantry_Rifleman_2";
-							atlOffset=3.8877716;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -16151,7 +12619,7 @@ class Mission
 					{
 					};
 					id=1089;
-					atlOffset=-124.86;
+					atlOffset=-0.20399094;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16176,7 +12644,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item70
+				class Item61
 				{
 					dataType="Group";
 					side="East";
@@ -16553,7 +13021,7 @@ class Mission
 					{
 					};
 					id=1094;
-					atlOffset=-124.86;
+					atlOffset=0.37339973;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16578,7 +13046,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item71
+				class Item62
 				{
 					dataType="Group";
 					side="East";
@@ -16955,7 +13423,7 @@ class Mission
 					{
 					};
 					id=1099;
-					atlOffset=-124.86;
+					atlOffset=0.11098099;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16980,7 +13448,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item72
+				class Item63
 				{
 					dataType="Group";
 					side="East";
@@ -17357,7 +13825,7 @@ class Mission
 					{
 					};
 					id=1104;
-					atlOffset=-124.86;
+					atlOffset=0.49245453;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17382,7 +13850,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item73
+				class Item64
 				{
 					dataType="Group";
 					side="East";
@@ -17758,7 +14226,6 @@ class Mission
 					{
 					};
 					id=1109;
-					atlOffset=-124.86;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17783,7 +14250,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item74
+				class Item65
 				{
 					dataType="Group";
 					side="East";
@@ -18160,7 +14627,7 @@ class Mission
 					{
 					};
 					id=1114;
-					atlOffset=-124.86;
+					atlOffset=0.010005951;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18185,7 +14652,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item75
+				class Item66
 				{
 					dataType="Group";
 					side="East";
@@ -18562,7 +15029,7 @@ class Mission
 					{
 					};
 					id=1119;
-					atlOffset=-124.86;
+					atlOffset=0.50344849;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18587,7 +15054,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item76
+				class Item67
 				{
 					dataType="Group";
 					side="East";
@@ -18963,7 +15430,6 @@ class Mission
 					{
 					};
 					id=1141;
-					atlOffset=-124.86;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18988,7 +15454,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item77
+				class Item68
 				{
 					dataType="Group";
 					side="East";
@@ -19365,7 +15831,7 @@ class Mission
 					{
 					};
 					id=1146;
-					atlOffset=-124.86;
+					atlOffset=0.66727066;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19390,7 +15856,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item78
+				class Item69
 				{
 					dataType="Group";
 					side="East";
@@ -19767,7 +16233,7 @@ class Mission
 					{
 					};
 					id=1151;
-					atlOffset=-124.86;
+					atlOffset=0.12543106;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19792,7 +16258,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item79
+				class Item70
 				{
 					dataType="Group";
 					side="East";
@@ -20169,7 +16635,7 @@ class Mission
 					{
 					};
 					id=1156;
-					atlOffset=-124.86;
+					atlOffset=-0.11983871;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20194,7 +16660,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item80
+				class Item71
 				{
 					dataType="Group";
 					side="East";
@@ -20571,7 +17037,7 @@ class Mission
 					{
 					};
 					id=1161;
-					atlOffset=-124.86;
+					atlOffset=0.41164589;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20596,7 +17062,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item81
+				class Item72
 				{
 					dataType="Group";
 					side="East";
@@ -20973,7 +17439,7 @@ class Mission
 					{
 					};
 					id=1166;
-					atlOffset=-124.86;
+					atlOffset=-0.30451679;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20998,7 +17464,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item82
+				class Item73
 				{
 					dataType="Group";
 					side="East";
@@ -21374,7 +17840,6 @@ class Mission
 					{
 					};
 					id=1171;
-					atlOffset=-124.86;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21399,7 +17864,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item83
+				class Item74
 				{
 					dataType="Group";
 					side="East";
@@ -21776,7 +18241,7 @@ class Mission
 					{
 					};
 					id=1176;
-					atlOffset=-124.86;
+					atlOffset=0.070594788;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21801,7 +18266,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item84
+				class Item75
 				{
 					dataType="Group";
 					side="East";
@@ -22178,7 +18643,7 @@ class Mission
 					{
 					};
 					id=1181;
-					atlOffset=-124.86;
+					atlOffset=-7.1439924;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22203,7 +18668,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item85
+				class Item76
 				{
 					dataType="Group";
 					side="East";
@@ -22232,11 +18697,11 @@ class Mission
 					{
 					};
 					id=1130;
-					atlOffset=-124.86;
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			id=382;
-			atlOffset=-124.86;
+			atlOffset=-4.6352158;
 		};
 		class Item7
 		{
@@ -28441,17 +24906,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1509.9917,20.594042,2521.0056};
-				angles[]={0,1.707939,0};
+				position[]={1509.9918,20.594086,2521.0054};
+				angles[]={0,1.7079443,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="caisse3";
 			};
 			id=1133;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=-3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28501,12 +24966,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1365.0305,26.800823,2556.9958};
-				angles[]={0,4.6699662,0};
+				angles[]={0,4.66996,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="caisse2";
 			};
 			id=1134;
 			type="Land_WoodenCrate_01_F";
@@ -28559,12 +25025,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1197,27.278189,2660};
-				angles[]={0,6.1676373,0};
+				angles[]={0,6.1676445,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="caisse1";
 			};
 			id=1135;
 			type="Land_WoodenCrate_01_F";
@@ -28616,17 +25083,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1430,29.288189,2783};
-				angles[]={0,1.5426358,0};
+				position[]={1429.9996,29.288191,2783};
+				angles[]={0,1.5426441,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="caisse4";
 			};
 			id=1136;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=-3.8146973e-006;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28675,17 +25143,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1656.9972,24.914177,2666.9985};
-				angles[]={0,6.1531339,0};
+				position[]={1656.9972,24.914232,2666.999};
+				angles[]={0,6.153141,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="caisse5";
 			};
 			id=1137;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=-4.3869019e-005;
 			class CustomAttributes
 			{
 				class Attribute0

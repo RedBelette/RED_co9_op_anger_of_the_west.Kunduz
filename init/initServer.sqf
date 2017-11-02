@@ -86,7 +86,7 @@ startTheGame=false;
 
 /**/
 ["vehicleCam1 distance (getMarkerPos 'marker_task_1') < 75","['car', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;
-["!alive caisse_1 and !alive caisse_2 and !alive caisse_3 and !alive caisse_4 and !alive caisse_5","['caches', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;
+["!alive caisse1 and !alive caisse2 and !alive caisse3 and !alive caisse4 and !alive caisse5","['caches', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;
 ["journalist distance (getMarkerPos 'marker_task_6') < 75","['exfiltrez', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;
 
 
