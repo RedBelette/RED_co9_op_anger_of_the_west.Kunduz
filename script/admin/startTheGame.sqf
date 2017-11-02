@@ -1,7 +1,10 @@
 startTheGame=true;
-loadEnemies=true;
 
 ["Attention, la mission démarre"] remoteExec ["hint"];
+
+sleep 3;
+
+
 
 sleep 10;
 

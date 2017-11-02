@@ -1,0 +1,1 @@
+contact addAction ["Parler", "script\client\progressbar\contactAction.sqf"];

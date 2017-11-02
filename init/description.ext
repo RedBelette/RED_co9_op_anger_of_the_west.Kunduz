@@ -24,3 +24,15 @@ class CfgDebriefing
 	};
 
 };
+
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class IntroMusic
+	{
+		name = "IntroMusic";
+		sound[] = {"\media\music\intromusic.ogg", db+10, 1.0};
+	};
+};

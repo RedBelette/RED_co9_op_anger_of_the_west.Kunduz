@@ -1,0 +1,1 @@
+["script\server\action\bivouacMountedAction.sqf"] call TGV_fnc_execScriptOnServer;
