@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=552;
+		nextID=567;
 	};
 	class Camera
 	{
-		pos[]={4885.1655,14.015744,223.70267};
-		dir[]={-0.87438744,-0.41433001,-0.25303084};
-		up[]={-0.39811769,0.90989769,-0.11519728};
-		aside[]={-0.27795911,1.0356307e-006,0.960621};
+		pos[]={4883.23,12.602888,219.45424};
+		dir[]={-0.66912413,-0.34421909,0.65881419};
+		up[]={-0.24537975,0.93866569,0.24161287};
+		aside[]={0.70163298,-8.7171793e-007,0.71257657};
 	};
 };
 binarizationWanted=0;
@@ -270,24 +270,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="Enh_saveLoadout";
 			expression="      if (!is3DEN && hasInterface && _value) then      {         [] spawn         {            waitUntil {sleep 1; !isNull player};            if (isNil {player getVariable 'Enh_savedLoadout'}) then            {               player setVariable ['Enh_savedLoadout',getUnitloadout player];               player addEventHandler ['Respawn',{player setUnitLoadout (player getVariable 'Enh_savedLoadout')}];            };         };      };   ";
 			class Value
@@ -302,6 +284,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -27793,7 +27793,7 @@ class Mission
 				};
 			};
 			id=1257;
-			atlOffset=0.06815052;
+			atlOffset=0.06768322;
 		};
 		class Item146
 		{
@@ -27812,7 +27812,7 @@ class Mission
 			};
 			id=1258;
 			type="B_UAV_01_F";
-			atlOffset=0.06815052;
+			atlOffset=0.06768322;
 		};
 	};
 	class Connections
