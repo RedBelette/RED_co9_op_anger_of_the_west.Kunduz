@@ -1,100 +1,91 @@
-//193
-titleCut [" ", "BLACK OUT", 1];
-sleep 3;
-setViewDistance 12000;
-sleep 3;
+
+showCinemaBorder false;
+
+playMusic "OutroMusic";
+
+titleCut [" ", "BLACK OUT", 0];
+sleep 1;
+
+// téléportation
+_teleportPosBivouac = player getVariable "teleportPosBivouac";
+if (!isNil "_teleportPosBivouac") then {
+	player setDir (player getVariable "bivouacDir");
+	player setPos _teleportPosBivouac;
+	player switchMove (player getVariable "bivouacAnim");
+};
+
+// position de départ de la caméra
+_camera = "camera" camcreate [508.711,2727.72,0.7];
+_camera cameraEffect ["internal", "back"];
+_camera camSetTarget teleport_16;
+_camera camCommit 0;
+true setCamUseTI 0;
+
+sleep 1;
 
 execVM "script\client\end\generic.sqf";
+titleCut [" ", "BLACK IN", 1];
 
-playMusic "Tatu";
+
+sleep 10;
+
+titleCut [" ", "BLACK OUT", 1];
 sleep 1;
 titleCut [" ", "BLACK IN", 1];
 
-_posPlayer = getPos player;
-
-// 1
-_posStart = [_posPlayer select 0, _posPlayer select 1, 3];
-_posEnd = [_posPlayer select 0, (_posPlayer select 1)-80, 200];
-
-_camera = "camera" camcreate _posStart;
+_camera = "camera" camcreate [560.433,2711,3];
 _camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
+_camera camSetTarget teleport_16;
+_camera camCommit 0;
 
-waitUntil {camCommitted _camera};
+sleep 10;
 
+titleCut [" ", "BLACK OUT", 1];
+sleep 1;
+titleCut [" ", "BLACK IN", 1];
 
-// 2
-_posStart = _posEnd;
-_posEnd = [_posStart select 0, (_posStart select 1) - 193, 200];
-
-_camera = "camera" camcreate _posStart;
+_camera = "camera" camcreate [553.072,2767.97,10];
 _camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
+_camera camSetTarget teleport_16;
+_camera camCommit 0;
 
-waitUntil {camCommitted _camera};
+sleep 10;
 
-// 3
-_posStart = _posEnd;
-_posEnd = [_posStart select 0, (_posStart select 1) - 193, 180];
+titleCut [" ", "BLACK OUT", 1];
+sleep 1;
+titleCut [" ", "BLACK IN", 1];
 
-_camera = "camera" camcreate _posStart;
+_camera = "camera" camcreate [532.365,2731.56,75];
 _camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
+_camera camSetTarget teleport_16;
+_camera camCommit 0;
 
-waitUntil {camCommitted _camera};
+sleep 10;
 
-// 4
-_posStart = _posEnd;
-_posEnd = [_posStart select 0, (_posStart select 1) - 193, 160];
+titleCut [" ", "BLACK OUT", 1];
+sleep 1;
+titleCut [" ", "BLACK IN", 1];
 
-_camera = "camera" camcreate _posStart;
+_camera = "camera" camcreate [594.655,2713.25,100];
 _camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
+_camera camSetTarget teleport_16;
+_camera camCommit 0;
 
-waitUntil {camCommitted _camera};
+sleep 10;
 
-// 5
-_posStart = _posEnd;
-_posEnd = [_posStart select 0, (_posStart select 1) - 193, 140];
+titleCut [" ", "BLACK OUT", 1];
+sleep 1;
+titleCut [" ", "BLACK IN", 1];
 
-_camera = "camera" camcreate _posStart;
+_camera = "camera" camcreate [410.086,2755.52,200];
 _camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
+_camera camSetTarget teleport_16;
+_camera camCommit 0;
 
-waitUntil {camCommitted _camera};
+sleep 10;
 
-// 6
-_posStart = _posEnd;
-_posEnd = [_posStart select 0, (_posStart select 1) - 193, 120];
-
-_camera = "camera" camcreate _posStart;
-_camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
-
-waitUntil {camCommitted _camera};
-
-// 7
-_posStart = _posEnd;
-_posEnd = [_posStart select 0, (_posStart select 1) - 193, 100];
-
-_camera = "camera" camcreate _posStart;
-_camera cameraEffect ["internal", "back"];
-_camera camSetPos _posEnd;
-_camera camSetTarget player;
-_camera camCommit 27.6;
-
-waitUntil {camCommitted _camera};
+titleCut [" ", "BLACK OUT", 1];
+sleep 1;
+titleCut [" ", "BLACK IN", 1];
 
 endMission "end2";

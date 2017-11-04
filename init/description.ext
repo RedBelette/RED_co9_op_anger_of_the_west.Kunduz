@@ -35,4 +35,10 @@ class CfgMusic
 		name = "IntroMusic";
 		sound[] = {"\media\music\intromusic.ogg", db+10, 1.0};
 	};
+
+	class OutroMusic
+	{
+		name = "OutroMusic";
+		sound[] = {"\media\music\outromusic.ogg", db+10, 1.0};
+	};
 };

@@ -21,7 +21,6 @@ startTheGame=false;
 /*["loadEnemies and (east countSide allUnits) < 60","[east, getPos karShekArea, 180] call TGV_fnc_defendArea;"] call TGV_fnc_action;
 ["loadEnemies and (east countSide allUnits) < 40","[getPos talKarArea, getPos karShekArea, 5, 20] execVM 'script\spawnEnemies.sqf';"] call TGV_fnc_action;*/
 
-
 // Avions d'ambience
 ["[[-25,1466,0],[5422,3599,0]] execVM 'script\cronjob\ambientFlyBy.sqf';", 600] call TGV_fnc_repeatedAction;
 ["[[4275,2299,0], [345,3490,0]] execVM 'script\cronjob\ambientFlyBy.sqf';", 900] call TGV_fnc_repeatedAction;
@@ -30,11 +29,6 @@ startTheGame=false;
 
 // Contient onEachFrame
 [2115,2907,400] execVM "script\material\satelitte.sqf";
-
-// Charge le briefing chez les clients + JIP
-["script\briefing\usa.sqf", true] call TGV_fnc_execScriptOnClients;
-["script\briefing\adminMission.sqf", true] call TGV_fnc_execScriptOnClients;
-["script\briefing\note.sqf", true] call TGV_fnc_execScriptOnClients;
 
 
 // Configure monitors

@@ -2,7 +2,7 @@
 [
 	blufor,
 	"car",
-	["Cachez les véhicules derrière les rocher, une équipe viendra les récupérer.", "Abandonner véhicule"],
+	["Cachez les véhicules derrière les rochers, une équipe viendra les récupérer.", "Abandonner véhicule"],
 	objNull,
 	true,
 	6,

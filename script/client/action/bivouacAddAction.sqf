@@ -1,1 +1,1 @@
-bivouac addAction ["Monter bivouac", "script\client\progressbar\bivouacAction.sqf"];
+bivouacBloc addAction ["Monter bivouac", "script\client\progressbar\bivouacAction.sqf"];

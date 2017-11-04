@@ -1,11 +1,11 @@
-_defaultViewDistance = viewDistance;
+/*_defaultViewDistance = viewDistance;*/
 showCinemaBorder false;
 
 playMusic "IntroMusic";
 
 titleCut [" ", "BLACK OUT", 1];
 sleep 1;
-setViewDistance 8000;
+/*setViewDistance 8000;*/
 sleep 2;
 titleCut [" ", "BLACK IN", 1];
 
@@ -93,7 +93,7 @@ waitUntil {camCommitted _camera};
 // Last fade
 titleCut [" ", "BLACK OUT", 3];
 sleep 3;
-setViewDistance 12000;
+/*setViewDistance 12000;*/
 sleep 1;
 titleCut [" ", "BLACK IN", 3];
 
