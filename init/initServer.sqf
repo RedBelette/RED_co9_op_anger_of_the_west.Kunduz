@@ -28,7 +28,7 @@ startTheGame=false;
 
 
 // Contient onEachFrame
-[2115,2907,400] execVM "script\material\satelitte.sqf";
+/*[2115,2907,400] execVM "script\material\satelitte.sqf";*/
 
 
 // Configure monitors
