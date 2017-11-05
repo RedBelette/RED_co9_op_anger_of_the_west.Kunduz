@@ -6,12 +6,12 @@ if (isServer or call TGV_fnc_isAdmin) then {
 		Cliquer ici pour commencer la mission.</execute><br/>
 		";
 
-	player createDiaryRecord ["diary", ["TGV Administration Mission",_adminMission]];
+	player createDiaryRecord ["diary", ["Administration mission",_adminMission]];
 } else {
 	_adminMission = "
 		<font size='18'>ACCEDER AU MODE ADMINISTRATION DE MISSION</font><br/>
 		|- <execute expression=""execVM 'script\briefing\adminMission.sqf';"">
 		Demander les droits pour l'administration de la mission.</execute><br/>
 		";
-	player createDiaryRecord ["diary", ["TGV Administration Mission",_adminMission]];
+	player createDiaryRecord ["diary", ["Administration mission",_adminMission]];
 }

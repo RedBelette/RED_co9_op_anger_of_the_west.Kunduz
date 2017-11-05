@@ -54,7 +54,10 @@ _camera cameraEffect ["internal", "back"];
 _camera camSetDir (_riverPos vectorFromTo _riverDirPos2);
 _camera camCommit 0;
 waitUntil {camCommitted _camera};
-sleep 15;
+
+sleep 4;
+["media\image\title.paa", 9] call MIS_fnc_imageFullScreen;
+sleep 11;
 
 // Fade
 titleCut [" ", "BLACK OUT", 3];

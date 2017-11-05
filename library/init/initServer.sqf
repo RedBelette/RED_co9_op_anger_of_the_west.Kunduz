@@ -22,5 +22,3 @@ enableSaving [false, false];
 if !(isNil 'tgvcurator') then  { // Vérifie si la variable a été assigné
 	tgvcurator addEventHandler ["CuratorPinged", {_this exec "library\event\curatorPinged.sqf"}];
 };
-
-"library\script\briefing\admin.sqf" remoteExec ["execVM", 0, true];

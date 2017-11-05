@@ -1,16 +1,12 @@
-if (isServer or call TGV_fnc_isAdmin) then {
+_note = "
+	<font size='18'>NOTE DE MISSION POUR L'ADMIN</font><br/>
+	Vous avez la possibilité de vous équiper à l'arsenal et de récupérer le darter à cet endoit :<br/>
+	<img image='media\image\help2.jpg' width='300' height='169'/><br/><br/>
+	Pour lancer la mission, cliquer sur le lien depuis le briefing 'Administration mission' (vous devez être admin).<br/>
+	<img image='media\image\help1.jpg' width='300' height='90'/><br/><br/>
+	Le véhicule ci-dessous est a votre disposition et sera téléporté avec vous.<br/>
+	<img image='media\image\help3.jpg' width='300' height='169'/><br/><br/>
+	<img image='media\image\help4.jpg' width='300' height='169'/>
+	";
 
-	_note = "
-		<font size='18'>NOTE DE MISSION POUR LE GAME MASTER</font><br/>
-		Les unités se charge dynamiquement dans cette mission.<br/><br/>
-		";
-
-	player createDiaryRecord ["diary", ["TGV Note Administrateur",_note]];
-} else {
-	_note = "
-		<font size='18'>ACCEDER AU NOTE ADMIN</font><br/>
-		|- <execute expression=""execVM 'script\briefing\note.sqf';"">
-		Demander les notes admin.</execute><br/>
-		";
-	player createDiaryRecord ["diary", ["TGV Note Administrateur",_note]];
-}
+player createDiaryRecord ["diary", ["Note de mission",_note]];
