@@ -3,6 +3,5 @@ respawnOnStart = -1;
 
 // configuration de ace3 avec les paramètres milsim
 class ACE_Settings {
-    #include "..\config\ace3\medicalAdvancedAceConfig.hpp"
+    #include "..\config\ace3\medicalAdvancedChocAceConfig.hpp"
 }
-

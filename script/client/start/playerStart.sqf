@@ -84,7 +84,7 @@ titleCut [" ", "BLACK IN", 3];
 // Zoom in
 _posPlayer = getPos player;
 _posStart = [_posPlayer select 0, (_posPlayer select 1)-80, 20];
-_posEnd = [_posPlayer select 0, _posPlayer select 1, 3];
+_posEnd = [(_posPlayer select 0) - 1.5, _posPlayer select 1, 1.5];
 _camera = "camera" camcreate _posStart;
 _camera cameraEffect ["internal", "back"];
 _camera camSetTarget player;
