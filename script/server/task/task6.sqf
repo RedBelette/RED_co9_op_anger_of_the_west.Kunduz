@@ -2,7 +2,7 @@
 [
 	blufor,
 	"end",
-	["Installez un bivouac au Nord pour mettre fin à votre mission.", "Terminer la mission"],
+	["Installez un bivouac au Nord pour mettre fin à votre mission. (point Paradise)", "Terminer la mission"],
 	objNull,
 	false,
 	1,

@@ -5,7 +5,7 @@
 	["Notre contact nous indique la présence d’un journaliste prit en otage à cet endroit. Exfiltrez le jusqu'au futur bivouac.", "Exfiltrez un otage"],
 	objNull,
 	false,
-	2,
+	3,
 	true,
 	"getout",
 	false

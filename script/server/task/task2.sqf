@@ -2,10 +2,10 @@
 [
 	blufor,
 	"infiltrez",
-	["Infiltrez-vous derrière les défenses ennemies pour rejoindre la tour ouest. Depuis cet endroit, vous allez pouvoir noter toutes les informations importantes de la zone. ", "Infiltrez-vous"],
+	["Infiltrez-vous derrière les défenses ennemies pour rejoindre la tour ouest (point New York). Depuis cet endroit, vous allez pouvoir noter toutes les informations importantes de la zone. ", "Infiltrez-vous"],
 	objNull,
 	false,
-	5,
+	6,
 	true,
 	"run",
 	false

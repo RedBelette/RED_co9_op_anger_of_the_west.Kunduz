@@ -29,7 +29,7 @@ L’AR-2 Darter est un drone de reconnaissance et de surveillance. Agile, silenc
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-Vous arrivez dans la zone à bord d’un M1232 pour faire jonction avec le point Paris. Cachez votre véhicule et infiltrez-vous dans Chahar Dara. Nous avons un indic à l’intérieur qui pourra vous renseigner sur divers objectifs secondaires. Nous vous recommandons également d’infiltrez la tour situé sur le point New York. Votre objectif principal est de nous transmettre les informations trouvé sur le terrain, un drone a été mis à votre disposition au QG, pensez à l’installer dans le véhicule avant de partir.
+Vous arrivez dans la zone à bord d’un M1232 pour faire jonction avec le point Paris. Cachez votre véhicule et infiltrez-vous dans Chahar Dara. Nous avons un indic à l’intérieur qui pourra vous renseigner sur divers objectifs secondaires (point Kaboul). Nous vous recommandons également d’infiltrez la tour situé sur le point New York. Votre objectif principal est de nous transmettre les informations trouvé sur le terrain, un drone a été mis à votre disposition au QG, pensez à l’installer dans le véhicule avant de partir. Votre mission se terminera sur le point paradise où vous installerez un bivouac pour la nuit.
 "]];
 
 // ====================================================================================

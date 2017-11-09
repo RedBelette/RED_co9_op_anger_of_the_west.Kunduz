@@ -69,6 +69,7 @@ startTheGame=false;
 "caisse_4" setMarkerAlpha 0;
 "caisse_5" setMarkerAlpha 0;
 "marker_task_5" setMarkerAlpha 0;
+"gasStation" setMarkerAlpha 0;
 
 #include "..\script\server\task\task1.sqf";
 #include "..\script\server\task\task2.sqf";
@@ -76,7 +77,6 @@ startTheGame=false;
 /*#include "..\script\server\task\task4.sqf";
 #include "..\script\server\task\task5.sqf";*/
 #include "..\script\server\task\task6.sqf";
-
 
 /**/
 ["vehicleCam1 distance (getMarkerPos 'marker_task_1') < 75","['car', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;
@@ -86,3 +86,5 @@ startTheGame=false;
 
 ["script\client\action\contactAddAction.sqf", true] call TGV_fnc_execScriptOnClients;
 ["script\client\action\bivouacAddAction.sqf", true] call TGV_fnc_execScriptOnClients;
+
+["!alive fuelPocket", "fuelTank setDamage 1; ['fuel', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;

@@ -6,6 +6,10 @@
 "caisse_4" setMarkerAlpha 1.0;
 "caisse_5" setMarkerAlpha 1.0;
 "marker_task_5" setMarkerAlpha 1.0;
+"gasStation" setMarkerAlpha 1.0;
 
 execVM "script\server\task\task4.sqf";
 execVM "script\server\task\task5.sqf";
+execVM "script\server\task\task7.sqf";
+
+["Carte mise à jour"] remoteExec ["hint"];
