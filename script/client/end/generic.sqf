@@ -15,7 +15,7 @@ _array = [];
 
 _array pushBack format ["%1<br/>%2", "C'était la mission: Colère de l'ouest", "(Forces Spéciales)"];
 
-_array pushBack format ["%1<br/><br/>%2", "Merci aux S.O.R.U. pour l'idée original", "Merci aux TGV pour les nombreux playtests"];
+_array pushBack format ["%1<br/><br/>%2", "Merci aux S.O.R.U. pour l'idée originale", "Merci aux TGV pour les nombreux playtests"];
 
 // Remerciements joueurs
 _playerUnitsText = "Merci à vous pour votre participation<br/>";

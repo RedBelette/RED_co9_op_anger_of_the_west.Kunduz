@@ -16,9 +16,9 @@ class CfgDebriefing
 	class End2
 	{
 		title = "Victoire";
-		subtitle = "Les talibans sont en reddition";
-		description = "Les états-unis peuvent être fière de leurs combats. Aujourd'hui, en cette heure, kunduz a été libéré !";
-		pictureBackground = "library\media\image\victory.jpg";
+		subtitle = "Mission accomplie";
+		description = "Votre équipe passera la nuit au côté de l'ennemi.";
+		pictureBackground = "media\image\fs.jpg";
 		//picture = "library\media\image\tgv.jpg";
 		//pictureColor[] = {0.0,0.3,0.6,1};
 	};

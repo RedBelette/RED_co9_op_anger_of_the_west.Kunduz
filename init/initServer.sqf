@@ -88,3 +88,5 @@ startTheGame=false;
 ["script\client\action\bivouacAddAction.sqf", true] call TGV_fnc_execScriptOnClients;
 
 ["!alive fuelPocket", "fuelTank setDamage 1; ['fuel', 'SUCCEEDED'] spawn BIS_fnc_taskSetState;"] call TGV_fnc_action;
+
+["!alive caisse1 or !alive caisse2 or !alive caisse3 or !alive caisse4 or !alive caisse5 or !alive fuelPocket","[east, getPos caisse4, 500] call TGV_fnc_defendArea;"] call TGV_fnc_action;
