@@ -1,4 +1,4 @@
-params ["_side", "_minTriggerReddition", "_"];
+params ["_side", "_minTriggerReddition"];
 
 _sideCount = _side countSide allUnits;
 
