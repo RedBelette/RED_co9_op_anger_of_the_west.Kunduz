@@ -11,6 +11,11 @@ startTheGame=false;
 // Redition
 ["[east, 30] call TGV_fnc_redition;", 30] call TGV_fnc_repeatedAction;
 
+// Helico stay on ground
+/*{
+	_x enableSimulation false;
+} forEach units helico;*/
+
 // Contient onEachFrame
 /*[2115,2907,400] execVM "script\material\satelitte.sqf";*/
 
