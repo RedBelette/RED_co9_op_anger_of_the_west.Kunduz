@@ -13,6 +13,7 @@ startTheGame=false;
 
 // Helico
 ["helicoGo", "execVM 'script\server\action\helico.sqf';"] call TGV_fnc_action;
+["helicoBack", "execVM 'script\server\action\helicoback.sqf';"] call TGV_fnc_action;
 
 
 

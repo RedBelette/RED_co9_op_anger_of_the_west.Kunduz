@@ -11,3 +11,15 @@ _action = ["heligo",
  			5] call ace_interact_menu_fnc_createAction;
 
 [_targetAction, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+_action = ["heliback",
+			"Retour des hélicots",
+ 			"media\image\heligo.paa",
+ 			{helicoBack = true; publicVariable 'helicoBack';},
+ 			{true},
+			{},
+ 			[],
+ 			[0,0,0],
+ 			5] call ace_interact_menu_fnc_createAction;
+
+[_targetAction, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;

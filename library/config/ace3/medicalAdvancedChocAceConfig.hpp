@@ -280,7 +280,7 @@ class ace_medical_preventInstaDeath {
     force = 1;
 };
 class ace_medical_enableRevive {
-    value = 2;
+    value = 1;
     typeName = "SCALAR";
     force = 1;
 };
@@ -640,7 +640,7 @@ class ace_scopes_zeroReferenceTemperature {
     force = 1;
 };
 class ace_scopes_zeroReferenceBarometricPressure {
-    value = 1001.29;
+    value = 1013.25;
     typeName = "SCALAR";
     force = 1;
 };
