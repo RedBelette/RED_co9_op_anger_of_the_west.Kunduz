@@ -1,37 +1,50 @@
-while {(count (waypoints helico)) > 0} do
-{
-deleteWaypoint ((waypoints helico) select 0);
+helicoBack = false;
+
+_helicoGroup = _this select 0;
+_returnPos = _this select 1;
+
+diag_log ["helicoBack.sqf", _helicoGroup, _returnPos];
+
+while {(count (waypoints _helicoGroup)) > 0} do {
+	deleteWaypoint ((waypoints _helicoGroup) select 0);
 };
 
-helico setBehaviour "CARELESS";
-helico setCombatMode "BLUE";
+_helicoGroup setBehaviour "CARELESS";
+_helicoGroup setCombatMode "BLUE";
 
-helico addWaypoint [[4793.73,95.9654,0],0];
+_helicoGroup addWaypoint [_returnPos,0];
 
 _helicoSave = "";
 _helicos = [];
 {
  if !(_helicoSave isEqualTo (vehicle _x)) then {
-  _helicoSave = vehicle _x;
-  _helicos pushBack _helicoSave;
+	  _helicoSave = vehicle _x;
+	  _helicos pushBack _helicoSave;
  };
 
-} forEach units helico;
+} forEach units _helicoGroup;
 
 {
 	_heli = _x;
 
-	[_heli] spawn {
+	[_heli, _returnPos] spawn {
 		_heli = _this select 0;
-		while {alive _heli and (_heli distance [4730.88,293.82,0]) < 300} do {
-			_heli land "LAND";
-		};
-		while {alive _heli and isTouchingGround _heli} do {
-			_heli engineOn false;
-			while {(count (waypoints _heli)) > 0} do {
-				deleteWaypoint ((waypoints _heli) select 0);
-			};
-		};
+		_returnPos = _this select 1;
+
+		diag_log ["Landing by plane", _heli, _returnPos, str(alive _heli and (_heli distance _returnPos) < 300)];
+
+		while {alive _heli and (_heli distance _returnPos) > 300} do {};
+
+		diag_log ["Landing", _heli, _returnPos, _heli distance _returnPos];
+
+		_heli land "LAND";
+
+		while {alive _heli and !isTouchingGround _heli} do {};
+
+		diag_log ["stop Fueld", _heli, _returnPos];
+		_heli setFuel 0;
+
+		diag_log ["Landing by plane end", _heli, _returnPos, str(alive _heli and (_heli distance _returnPos) < 300)];
 	};
 
 } forEach _helicos;

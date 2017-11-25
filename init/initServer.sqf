@@ -11,10 +11,6 @@ startTheGame=false;
 // Redition
 ["[east, 30] call TGV_fnc_redition;", 30] call TGV_fnc_repeatedAction;
 
-// Helico
-["helicoGo", "execVM 'script\server\action\helico.sqf';"] call TGV_fnc_action;
-["helicoBack", "execVM 'script\server\action\helicoback.sqf';"] call TGV_fnc_action;
-
 
 
 /*#include "..\script\server\task\task1.sqf";
