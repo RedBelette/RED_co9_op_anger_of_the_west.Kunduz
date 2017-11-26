@@ -16,7 +16,7 @@ _array pushBack format ["%1<br/><br/>%2", "Merci aux <t color='#FF3F00'>S.O.R.U.
 _array pushBack format ["%1<br/><br/>%2", "Merci aux autres équipes inscrites", "<t color='#FF3F00'>CPA-10</t> - <t color='#FF3F00'>GSRI</t> - <t color='#FF3F00'>AMFR</t> - <t color='#FF3F00'>126RIM</t>"];
 
 //
-_array pushBack format ["%1<br/><br/>%2", "ET VIVE LA COMMUNAUTE ARMA <t color='#0000FF'>FRAN</t><t color='#FFFFFF'>CO</t><t color='#FF0000'>PHONE</t>"];
+_array pushBack format ["%1<br/><br/>%2", "QUE VIVE LA COMMUNAUTE ARMA <t color='#0000FF'>FRAN</t><t color='#FFFFFF'>CO</t><t color='#FF0000'>PHONE</t>"];
 
 // Remerciements joueurs
 _maxPage = ceil (count _arrayWest / 10);
