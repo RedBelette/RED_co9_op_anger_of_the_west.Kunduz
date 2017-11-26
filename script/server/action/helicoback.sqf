@@ -37,6 +37,8 @@ _helicos = [];
 
 		diag_log ["Landing", _heli, _returnPos, _heli distance _returnPos];
 
+		sleep random 30;
+
 		_heli land "LAND";
 
 		while {alive _heli and !isTouchingGround _heli} do {};

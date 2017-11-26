@@ -1,0 +1,1 @@
+"script\client\end\endMission.sqf" remoteExec ["execVM"];
