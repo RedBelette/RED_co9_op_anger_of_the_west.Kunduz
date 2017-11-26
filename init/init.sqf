@@ -2,6 +2,8 @@
 
 // Initialise les fonctions pour tout les clients.
 
+reddition =false;
+
 MIS_fnc_imageFullScreen = compile loadFile "function\MIS_fnc_imageFullScreen.sqf";
 
 _handle = execVM "library\function\initClientFunction.sqf";

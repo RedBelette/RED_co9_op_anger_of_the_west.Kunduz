@@ -15,9 +15,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Victoire";
-		subtitle = "Mission accomplie";
-		description = "Votre équipe passera la nuit au côté de l'ennemi.";
+		title = "Fin";
+		subtitle = "Mission terminée";
+		description = "";
 		pictureBackground = "media\image\fs.jpg";
 		//picture = "library\media\image\tgv.jpg";
 		//pictureColor[] = {0.0,0.3,0.6,1};

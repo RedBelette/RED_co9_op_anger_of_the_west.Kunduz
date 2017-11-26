@@ -9,7 +9,7 @@ sleep 1;
 // position de départ de la caméra
 _camera = "camera" camcreate [508.711,2727.72,0.7];
 _camera cameraEffect ["internal", "back"];
-_camera camSetTarget player;
+_camera camSetTarget [2034.97,3078.53,1];
 _camera camCommit 0;
 true setCamUseTI 0;
 
@@ -26,10 +26,12 @@ sleep 1;
 _locations = [
 	[560.433,2711,3],
 	[553.072,2767.97,10],
-	[532.365,2731.56,75],
-	[594.655,2713.25,100],
-	[410.086,2755.52,200],
-	[508.711,2727.72,0.7]
+	[3213.5,1187.43,75],
+	[2852.72,2837.28,100],
+	[993.653,3365.53,200],
+	[1144.73,2231.07,100],
+	[2075.22,3009.21,75],
+	[1498.22,2336.06,10]
 ];
 _i = 0;
 while {!scriptDone _handleGeneric} do {
@@ -41,7 +43,7 @@ while {!scriptDone _handleGeneric} do {
 
 	_camera = "camera" camcreate (_locations select _i);
 	_camera cameraEffect ["internal", "back"];
-	_camera camSetTarget player;
+	_camera camSetTarget [2034.97,3078.53,1];
 	_camera camCommit 0;
 
 	sleep 10;
@@ -55,6 +57,4 @@ while {!scriptDone _handleGeneric} do {
 sleep 1;
 titleCut [" ", "BLACK IN", 1];
 
-/*endMission "end2";*/
-player cameraEffect ["terminate","back"];
-camDestroy _camera;
+endMission "end2";

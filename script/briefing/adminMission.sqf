@@ -4,7 +4,7 @@ if (isServer or call TGV_fnc_isAdmin) then {
 		<font size='18'>LANCER LE SCENARIO</font><br/>
 		|- <execute expression=""'script\server\start\startTheGame.sqf' remoteExec ['execVM', 2, false];"">
 		Cliquer ici pour commencer la mission.</execute><br/>
-		<font size='18'>LANCER LE SCENARIO</font><br/>
+		<font size='18'>TERMINER LE SCENARIO</font><br/>
 		|- <execute expression=""'script\server\start\endTheGame.sqf' remoteExec ['execVM', 2, false];"">
 		Cliquer ici pour terminer la mission.</execute><br/>
 		";
