@@ -11,6 +11,8 @@ _array = [];
 
 _array pushBack format ["%1<br/>%2", "C'était la mission: <t color='#FF3F00'>Colère de l'ouest</t>", "(InterTeam)"];
 
+_array pushBack format ["%1<br/><br/>%2", "Merci à <t color='#FF3F00'>Mr.H</t> pour son dévouement et son aide précieuse", "Merci à <t color='#FF3F00'>Anto</t> de nous fournir le serveur malgré le hack"];
+
 _array pushBack format ["%1<br/><br/>%2", "Merci aux <t color='#FF3F00'>S.O.R.U.</t> pour l'idée originale", "Merci aux <t color='#FF3F00'>TGV</t> pour les nombreux playtests"];
 
 _array pushBack format ["%1<br/><br/>%2", "Merci aux autres équipes inscrites", "<t color='#FF3F00'>CPA-10</t> - <t color='#FF3F00'>GSRI</t> - <t color='#FF3F00'>AMFR</t> - <t color='#FF3F00'>126RIM</t>"];
