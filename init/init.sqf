@@ -10,5 +10,4 @@ _handle = execVM "library\function\initClientFunction.sqf";
 waitUntil {scriptDone _handle};
 
 call compilefinal preprocessFileLineNumbers  "script\briefing\adminMission.sqf";
-call compilefinal preprocessFileLineNumbers  "script\briefing\note.sqf";
 call compilefinal preprocessFileLineNumbers  "script\briefing\usa.sqf";

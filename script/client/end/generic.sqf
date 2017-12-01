@@ -27,7 +27,7 @@ _allUnitsTextPage= "";
 
 while {_page < _maxPage} do
 {
-	_allUnitsTextPage = format ["Merci <t color='#FF3F00'>à chacun</t> pour votre participation (%1/%2)<br/><br/>", _page + 1, _maxPage];
+	_allUnitsTextPage = format ["Merci <t color='#FF3F00'>à chacun</t> pour votre participation (%1/%2)<br/>", _page + 1, _maxPage];
 	_i = 0;
 	while {_i < 10} do
 	{
